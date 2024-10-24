@@ -1,4 +1,4 @@
-This program allows control of the original version of the HiTechAstro Mount Hub Pro - it looks like this:
+This program allows control of the original version of the HiTecAstro Mount Hub Pro - it looks like this:
 
 <img src="https://i.imgur.com/6VYarDZ.jpeg" alt="MHP">
 
