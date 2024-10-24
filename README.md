@@ -8,7 +8,7 @@ Commands can then be sent from the N.I.N.A. Equipment pages or the advanced sequ
 
 Setting can be customised in the settings.json file which is created when the program is first run. Focucer speed defaults to 50.
 
-https://github.com/exploded/mhp-ascom-alpaca/blob/main/NINASwitch.jpg
+Example screen prtins from N.I.N.A.
 
 <img src="https://raw.githubusercontent.com/exploded/mhp-ascom-alpaca/refs/heads/main/NINASwitch.jpg" alt="Switch">
 
