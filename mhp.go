@@ -20,9 +20,9 @@ type sw struct {
 	Focucerposition     int32      `json:"focucerposition"`
 	Focucerspeed        int32      `json:"focucerspeed"`
 	Name                [13]string `json:"name"`       // *
-	Devicetype          [13]string `json:"devicetype"` //*
-	Number              [13]uint32 `json:"number"`     //**
-	Uniqueid            [13]string `json:"uniqueid"`   //**
+	Devicetype          [13]string `json:"devicetype"` // *
+	Number              [13]uint32 `json:"number"`     // *
+	Uniqueid            [13]string `json:"uniqueid"`   // *
 	Id                  [13]uint32 `json:"id"`
 	Customname          [13]string `json:"customname"`
 	Min                 [13]int64  `json:"min"`
@@ -283,7 +283,7 @@ func (s *sw) setvalue(id int32, value int64) (err error) {
 
 	// Value is in the 2 most significant digits Switch number is the 2 lest significant 2 hex digits.
 	var command int32 = (int32(value) * 0x100) + (0x48 + 12 - int32(id))
-	log.Println("Set dew heater no:", id-8, " to:", value)
+	log.Println("Set dew heater no ", id-8, " to ", value)
 	err = hidSend(int64(command))
 	if err != nil {
 		return err
@@ -381,7 +381,7 @@ func (s *sw) mhpmove(value int32) (err error) {
 	// Value is in the 2 most significant digits Switch number is the 2 lest significant 2 hex digits.
 	var command int64 = (value2 * 0x1000000) + (value1 * 0x10000) + part1
 
-	log.Println("Value (new position):", value, "Move Steps (+ve is out,-ve is in):", int64(value)-current, "Speed ", s.Focucerspeed)
+	log.Println("Move focuser to position:", value, " steps: (+ve is out,-ve is in):", int64(value)-current, "Speed: ", s.Focucerspeed)
 	err = hidSend(command)
 	if err != nil {
 		return err

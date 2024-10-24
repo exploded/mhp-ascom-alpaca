@@ -122,7 +122,6 @@ func (srv *ApiServer) handleTempCompAvailable(w http.ResponseWriter, r *http.Req
 
 // Immediately stop any focuser motion due to a previous Move(Int32) method call.
 func (srv *ApiServer) handleHalt(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
-	// JMC TODO do something here
 	resp := stringResponse{
 		Value: "",
 	}
@@ -134,7 +133,6 @@ func (srv *ApiServer) handleHalt(w http.ResponseWriter, r *http.Request, _ httpr
 
 // Moves the focuser by the specified amount or to the specified position depending on the value of the Absolute property.
 func (srv *ApiServer) handleMove(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
-	// JMC TODO do something here
 	value, err := getPositionFromRequest(r)
 	if err != nil {
 		resp := stringResponse{
@@ -147,7 +145,7 @@ func (srv *ApiServer) handleMove(w http.ResponseWriter, r *http.Request, _ httpr
 		return
 	}
 
-	// Moe the focuser:
+	// Move the focuser:
 	err = MhpMove(value)
 	if err != nil {
 		resp := stringResponse{

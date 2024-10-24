@@ -39,7 +39,7 @@ func (srv *ApiServer) handleDescription(w http.ResponseWriter, r *http.Request, 
 	resp := managementDescriptionResponse{
 		Value: ServerDescription{
 			ServerName:          "Alpaca MHP",
-			Manufacturer:        "https://deepspaceplace.com",
+			Manufacturer:        "https://github.com/exploded/mhp-ascom-alpaca",
 			ManufacturerVersion: bi.Main.Version,
 			Location:            Location,
 		},

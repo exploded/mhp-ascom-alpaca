@@ -18,7 +18,6 @@ package main
 import (
 	"encoding/binary"
 	"errors"
-	"log"
 
 	"github.com/karalabe/usb"
 )
@@ -57,6 +56,6 @@ func hidSend(message int64) (err error) {
 	}
 	defer mydevice.Close()
 	mydevice.Write(bs)
-	log.Printf("Command input: %x Little edian command sent: %x \n", message, bs)
+	// log.Printf("Command input: %x Little edian command sent: %x \n", message, bs)
 	return
 }

@@ -2,7 +2,7 @@
     "connected": true,
     "focucermaxincrement": 150,
     "focucermaxstep": 65535,
-    "focucerposition": 1027,
+    "focucerposition": 1000,
     "focucerspeed": 50,
     "name": [
         "Focuser",
@@ -80,6 +80,8 @@
         12
     ],
     "customname": [
+        "OTA Focuser",
+        "STL Camera",
         "",
         "",
         "",
@@ -87,10 +89,8 @@
         "",
         "",
         "",
-        "",
-        "",
-        "",
-        "",
+        "TOA130 dew heater",
+        "Finder scope dew heater",
         "",
         ""
     ],
@@ -156,7 +156,7 @@
     ],
     "value": [
         1000,
-        0,
+        1,
         0,
         0,
         0,

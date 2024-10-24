@@ -99,7 +99,7 @@ func (srv *ApiServer) handleDescriptionCommon(w http.ResponseWriter, r *http.Req
 
 // A string containing only the major and minor version of the driver.
 func (srv *ApiServer) handleDriverinfo(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
-	result := "Alpaca Mount Hub Pro Driver https://github.com/exploded/"
+	result := "Alpaca Mount Hub Pro Driver https://github.com/exploded/mhp-ascom-alpaca"
 	resp := stringResponse{
 		Value: result,
 	}

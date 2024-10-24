@@ -207,7 +207,6 @@ func getPositionFromRequest(r *http.Request) (result int32, err error) {
 	if result == 0 {
 		return -1, errors.New("position parameter out of range")
 	}
-	log.Println("Position:", result)
 	return result, nil
 }
 
