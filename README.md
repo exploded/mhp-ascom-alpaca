@@ -16,4 +16,4 @@ Example screen prints from N.I.N.A.
 <img src="https://raw.githubusercontent.com/exploded/mhp-ascom-alpaca/refs/heads/main/NINAfocuser.jpg" alt="Focuser">
 
 ## Instructions
-Plug the MHP into a Windows computer and it will be recognised as a USB HID device - no drivers are needed. Download and run the mhp.exe executable on the same computer the MHP is plugged into. Run N.I.N.A and it should be able to fiund and connect to the MHP as a switch device and a focuser.
+Plug the MHP into a Windows computer and it will be recognised as a USB HID device - no drivers are needed. Download and run the mhp.exe executable on the same computer the MHP is plugged into. Run N.I.N.A and it should be able to find and connect to the MHP as a switch device and a focuser device.
